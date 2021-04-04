@@ -179,9 +179,9 @@ toDefault prefixMap definitions modelName = go
       -- Here we transform the record type in a value, transforming the keys in
       -- this way:
       --
-      -- * take the BaseData from definition and populate it
-      -- * skip other required fields, except if they are records
-      -- * set the optional fields to None and the lists to empty
+      --  * take the BaseData from definition and populate it
+      --  * skip other required fields, except if they are records
+      --  * set the optional fields to None and the lists to empty
       Dhall.Record kvsf ->
         let getBaseData :: Maybe Definition -> Dhall.Map.Map Text Expr
             getBaseData (Just Definition { baseData = Just BaseData{..} }) =
