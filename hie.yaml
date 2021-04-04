@@ -1,0 +1,115 @@
+cradle:
+  cabal:
+    - path: "./dhall/./"
+      component: "dhall:bench:/deep-nested-large-record/*.dhall"
+
+    - path: "./dhall/src"
+      component: "lib:dhall"
+
+    - path: "./dhall/ghcjs-src"
+      component: "lib:dhall"
+
+    - path: "./dhall/ghc-src"
+      component: "lib:dhall"
+
+    - path: "./dhall/dhall/Main.hs"
+      component: "dhall:exe:dhall"
+
+    - path: "./dhall/tests"
+      component: "dhall:test:tasty"
+
+    - path: "./dhall/doctest"
+      component: "dhall:test:doctest"
+
+    - path: "./dhall/benchmark/parser/Main.hs"
+      component: "dhall:bench:dhall-parser"
+
+    - path: "./dhall/benchmark/deep-nested-large-record/Main.hs"
+      component: "dhall:bench:deep-nested-large-record"
+
+    - path: "./dhall-bash/src"
+      component: "lib:dhall-bash"
+
+    - path: "./dhall-bash/exec/Main.hs"
+      component: "dhall-bash:exe:dhall-to-bash"
+
+    - path: "./dhall-bash/exec/Paths_dhall_bash.hs"
+      component: "dhall-bash:exe:dhall-to-bash"
+
+    - path: "./dhall-docs/src"
+      component: "lib:dhall-docs"
+
+    - path: "./dhall-docs/dhall-docs/Main.hs"
+      component: "dhall-docs:exe:dhall-docs"
+
+    - path: "./dhall-docs/dhall-docs/Paths_dhall_docs.hs"
+      component: "dhall-docs:exe:dhall-docs"
+
+    - path: "./dhall-docs/doctest"
+      component: "dhall-docs:test:doctest"
+
+    - path: "./dhall-json/src"
+      component: "lib:dhall-json"
+
+    - path: "./dhall-json/dhall-to-json/Main.hs"
+      component: "dhall-json:exe:dhall-to-json"
+
+    - path: "./dhall-json/dhall-to-json/Paths_dhall_json.hs"
+      component: "dhall-json:exe:dhall-to-json"
+
+    - path: "./dhall-json/dhall-to-yaml/Main.hs"
+      component: "dhall-json:exe:dhall-to-yaml"
+
+    - path: "./dhall-json/dhall-to-yaml/Paths_dhall_json.hs"
+      component: "dhall-json:exe:dhall-to-yaml"
+
+    - path: "./dhall-json/json-to-dhall/Main.hs"
+      component: "dhall-json:exe:json-to-dhall"
+
+    - path: "./dhall-json/json-to-dhall/Paths_dhall_json.hs"
+      component: "dhall-json:exe:json-to-dhall"
+
+    - path: "./dhall-json/tasty"
+      component: "dhall-json:test:tasty"
+
+    - path: "./dhall-lsp-server/src"
+      component: "lib:dhall-lsp-server"
+
+    - path: "./dhall-lsp-server/app/Main.hs"
+      component: "dhall-lsp-server:exe:dhall-lsp-server"
+
+    - path: "./dhall-lsp-server/app/Paths_dhall_lsp_server.hs"
+      component: "dhall-lsp-server:exe:dhall-lsp-server"
+
+    - path: "./dhall-lsp-server/doctest"
+      component: "dhall-lsp-server:test:doctest"
+
+    - path: "./dhall-lsp-server/tests"
+      component: "dhall-lsp-server:test:tests"
+
+    - path: "./dhall-nix/src"
+      component: "lib:dhall-nix"
+
+    - path: "./dhall-nix/exec/Main.hs"
+      component: "dhall-nix:exe:dhall-to-nix"
+
+    - path: "./dhall-nix/exec/Paths_dhall_nix.hs"
+      component: "dhall-nix:exe:dhall-to-nix"
+
+    - path: "./dhall-yaml/src"
+      component: "lib:dhall-yaml"
+
+    - path: "./dhall-yaml/dhall-to-yaml-ng/Main.hs"
+      component: "dhall-yaml:exe:dhall-to-yaml-ng"
+
+    - path: "./dhall-yaml/dhall-to-yaml-ng/Paths_dhall_yaml.hs"
+      component: "dhall-yaml:exe:dhall-to-yaml-ng"
+
+    - path: "./dhall-yaml/yaml-to-dhall/Main.hs"
+      component: "dhall-yaml:exe:yaml-to-dhall"
+
+    - path: "./dhall-yaml/yaml-to-dhall/Paths_dhall_yaml.hs"
+      component: "dhall-yaml:exe:yaml-to-dhall"
+
+    - path: "./dhall-yaml/tasty"
+      component: "dhall-yaml:test:tasty"

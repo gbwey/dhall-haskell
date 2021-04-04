@@ -1,0 +1,144 @@
+literals
+--------
+^2015-01-02T12:13:14 : DateTime
+~"xyz" : Regex
+~["a","b","c","d","e"] : ListFixed (SS (SS (SS (SS SZ)))) Text  ==== ListFixed !!5 Text
+!4 : NonZero
+!!4 : Type
+SS (SS (SS SZ)) : Type  [[only used internally: SS SZ are now removed from repl]]
+SZ : Type [[only used internally: SS SZ are now removed from repl
++13 % !4 : Rational
+Prf : Proof Type
+^"xyz" : Sym "xyz"
+^^"xyz" : Type
+
+11 new types
+------------
+DateTime
+ListFixed
+NonZero
+PVoid
+Prf : Proof Type
+Proof : Type
+Rational
+Regex
+!!1 == SZ !!2 == SS SZ !!3 == SS (SS SZ) etc
+^"text" : ^^"text [Sym text]
+^^"text" : Type
+
+
+PVoid/kindUndefined  is not used much
+PVoid/undefined is redundant:  can replace with PVoid/error ^^"somevalue"
+
+73 new functions
+--------------------------
+DateTime/addDays
+DateTime/addMonths
+DateTime/addYears
+DateTime/fromDate
+DateTime/fromSeconds
+DateTime/fromWeek
+DateTime/getJulianDay
+DateTime/lastDayOfMonth
+DateTime/parse
+DateTime/setJulianDay
+DateTime/show
+DateTime/toDate
+DateTime/toSeconds
+DateTime/toWeek
+
+Double/parse
+-Double/show
+
+Integer/add
+Integer/and
+-Integer/clamp
+Integer/multiply
+-Integer/negate
+Integer/parse
+-Integer/show
+-Integer/toDouble
+Integer/xor
+
+-List/build
+List/choose
+-List/fold
+-List/head
+-List/indexed
+-List/last
+-List/length
+List/permutations
+-List/reverse
+
+ListFixed/fromList
+ListFixed/head
+ListFixed/tail
+ListFixed/toList
+
+-Natural/build
+-Natural/even
+-Natural/fold
+Natural/gcd
+-Natural/isZero
+-Natural/odd
+Natural/parse
+-Natural/show
+-Natural/subtract
+Natural/toBits
+-Natural/toInteger
+
+NonZero/add
+NonZero/clamp
+NonZero/div
+NonZero/log
+NonZero/mod
+NonZero/multiply
+NonZero/parse
+NonZero/show
+NonZero/toInteger
+NonZero/toNatural
+
+-Optional/build
+-Optional/fold
+
+PVoid/error
+PVoid/kindUndefined
+PVoid/undefined
+
+Proof/fromBool
+Proof/toBool
+
+Rational/fromDouble
+Rational/fromRational
+Rational/parse
+Rational/show
+Rational/toDouble
+
+Regex/match
+Regex/parse
+Regex/replace
+Regex/replix
+Regex/scan
+Regex/show
+Regex/split
+Regex/toText
+
+SS/add
+SS/equal
+SS/fromNonZero
+SS/lessThan
+SS/subtract
+SS/toNatural
+SS/toNonZero
+
+Sym/fromText
+Sym/toText
+
+Text/compare
+Text/length
+Text/pack
+-Text/show
+Text/toList
+Text/toLower
+Text/toUpper
+Text/unpack

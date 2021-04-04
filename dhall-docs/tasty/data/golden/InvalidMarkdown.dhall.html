@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html
+  ><head
+    ><title
+    >/InvalidMarkdown.dhall</title
+    ><link href="index.css" type="text/css" rel="stylesheet"
+    /><link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&amp;family=Lato:ital,wght@0,400;0,700;1,400&amp;display=swap"
+            type="text/css" rel="stylesheet"
+    /><script src="index.js" type="text/javascript"
+    /><meta charset="UTF-8"/></head
+  ><body
+    ><div class="nav-bar"
+      ><img src="dhall-icon.svg" class="dhall-icon"
+      /><p class="package-title"
+      >test-package</p
+      ><div class="nav-bar-content-divider"
+      /><a id="switch-light-dark-mode" class="nav-option"
+      >Switch Light/Dark Mode</a></div
+    ><div class="main-container"
+      ><h2 class="doc-title"
+        ><span class="crumb-divider"
+        >/</span
+        ><a href="index.html"
+        >test-package</a
+        ><span class="crumb-divider"
+        >/</span
+        ><span href="index.html" class="title-crumb"
+        >InvalidMarkdown.dhall</span></h2
+      ><a data-path="/InvalidMarkdown.dhall" class="copy-to-clipboard"
+        ><i
+          ><small
+          >Copy path to clipboard</small></i></a
+      ><br
+      /><div class="doc-contents"
+      >This file contains a markdown error right here `
+did you notice it?
+</div
+      ><h3
+      >Source</h3
+      ><div class="source-code"
+        ><pre
+          >--| This file contains a markdown error right here `<br
+          />--  did you notice it?<br
+          /><br
+          />let Pair = <a href="./Pair.dhall.html"
+          >./Pair.dhall</a
+          ><br
+          /><br
+          />let DeliveryStatus =<br
+          />    &lt; Sent: Pair Natural Text {-| Message has been _sent_. It carries a ./Pair.dhall reference<br
+          />                                    containing on the `first` field number of retries<br
+          />                                    and on the `second` field the delivered text<br
+          />                                -}<br
+          />    | InProgress                -- | Message is on the way!<br
+          />    | InQueue                   -- | Delivery for this message **hasn&#39;t** started<br
+          />    &gt;<br
+          /><br
+          />in DeliveryStatus<br/></pre></div></div></body></html>

@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html
+  ><head
+    ><title
+    >/deep/nested/folder/my-even.dhall</title
+    ><link href="../../../index.css" type="text/css" rel="stylesheet"
+    /><link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&amp;family=Lato:ital,wght@0,400;0,700;1,400&amp;display=swap"
+            type="text/css" rel="stylesheet"
+    /><script src="../../../index.js" type="text/javascript"
+    /><meta charset="UTF-8"/></head
+  ><body
+    ><div class="nav-bar"
+      ><img src="../../../dhall-icon.svg" class="dhall-icon"
+      /><p class="package-title"
+      >test-package</p
+      ><div class="nav-bar-content-divider"
+      /><a id="switch-light-dark-mode" class="nav-option"
+      >Switch Light/Dark Mode</a></div
+    ><div class="main-container"
+      ><h2 class="doc-title"
+        ><span class="crumb-divider"
+        >/</span
+        ><a href="../../../index.html"
+        >test-package</a
+        ><span class="crumb-divider"
+        >/</span
+        ><a href="../../index.html" class="title-crumb"
+        >deep</a
+        ><span class="crumb-divider"
+        >/</span
+        ><a href="../index.html" class="title-crumb"
+        >nested</a
+        ><span class="crumb-divider"
+        >/</span
+        ><a href="index.html" class="title-crumb"
+        >folder</a
+        ><span class="crumb-divider"
+        >/</span
+        ><span href="index.html" class="title-crumb"
+        >my-even.dhall</span></h2
+      ><a data-path="/deep/nested/folder/my-even.dhall"
+          class="copy-to-clipboard"
+        ><i
+          ><small
+          >Copy path to clipboard</small></i></a
+      ><br
+      /><div class="doc-contents"
+      /><h3
+      >Examples</h3
+      ><div class="source-code code-examples"
+        ><pre
+          >my-even 1 ≡ &lt; even | odd &gt;.odd<br/></pre
+        ><pre
+          >my-even 2 ≡ &lt; even | odd &gt;.even<br/></pre></div
+      ><h3
+      >Source</h3
+      ><div class="source-code"
+        ><pre
+          >{-<br
+          />Check if a natural is even or not returning an union data-type<br
+          />-}<br
+          />let my-even<br
+          />    : Natural → &lt; even | odd &gt;<br
+          />    = λ(n : Natural) →<br
+          />        if Natural/even n then &lt; even | odd&gt;.even else &lt; even | odd &gt;.odd<br
+          /><br
+          />let example0 = assert : my-even 1 === &lt;even | odd&gt;.odd<br
+          />let example0 = assert : my-even 2 === &lt;even | odd&gt;.even<br
+          /><br
+          />in my-even<br/></pre></div></div></body></html>
